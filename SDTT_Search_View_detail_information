@@ -1,1 +1,25 @@
-<mxfile host="app.diagrams.net" modified="2022-10-03T13:57:54.630Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" version="20.3.7" etag="mLuQcjWrn563T1ThGIuZ" type="github"><diagram id="FsBetBr5Myu6KMKoeMXH">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-10-03T14:01:59.913Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="H6ZTipspVDscNxuMmGOv" version="20.3.7" type="github">
+  <diagram id="FsBetBr5Myu6KMKoeMXH" name="Trang-1">
+    <mxGraphModel dx="1406" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NKZGe2VR_-gx4oD0NoiM-2" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="305" y="100" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NKZGe2VR_-gx4oD0NoiM-3" value="Boundary Object" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="80" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NKZGe2VR_-gx4oD0NoiM-4" value="Control Object" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="80" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NKZGe2VR_-gx4oD0NoiM-5" value="Entity Object" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="80" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NKZGe2VR_-gx4oD0NoiM-6" value=":Object" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="200" width="100" height="300" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -2,9 +2,7 @@ body{
     background-color: black ;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     min-width: 1000px;
-
 }
-
 #top{
     position: fixed;
     top: 0;
@@ -44,10 +42,7 @@ body{
     opacity: 0.9;
     border-radius: 5px;
 }
-#root__left-sidebar__action {
-    margin-top: 24px;
-}
-#root__left-sidebar__navigation .current {
+#root__left-sidebar__navigation.current{
     opacity: 1;
     color: white;
     background-color: #282828;
@@ -56,40 +51,27 @@ body{
     overflow: auto;
     width: 100%;
     height: 295px;
-    padding: 8px 24px;
+    padding: 0 24px;
     z-index: 1;
 }
-#root__left-sidebar__my-playlists .my-playlist {
+#root__left-sidebar__my-playlists > li {
     font-family: Gotham, sans-serif;
     line-height: 32px;
-    
     font-weight: 500;
     font-size: 14px;
-    cursor: default;
-    
+    cursor: default; 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#root__left-sidebar__my-playlists .my-playlist span {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow-x: hidden;
-}
-#root__left-sidebar__my-playlists .my-playlist .playing-playlist {
-    margin-left: 8px;
-    width: 12px;
-    display: none;
-}
-#root__left-sidebar__my-playlists .my-playlist:hover {
-    opacity:1;
-    color:white;
+#root__left-sidebar__my-playlists>li>span:hover{
+    color: #ffff;
 }
 .left{
     background: #121212;
     width: 17%;
     float: left;
-    padding-block-end: 700px;;
+    padding-block-end: 700px;
     border-radius: 8px;
     position: absolute;
     white-space: nowrap;
@@ -100,10 +82,11 @@ body{
 .right{
     background-color: #121212;
     background-image:linear-gradient(#4D4B4B 20px,#121212 400px);
-    max-width: 82%;
+    width: 82%;
     float: right;
     border-radius: 8px;
     margin: 0 auto;
+    min-width: 70%;
 }
 img.cover{
     width: 96%;
@@ -113,20 +96,15 @@ img.cover{
     margin-left: auto;
     padding: 20px 20px;
 }
-h1.title{
-    color: white;
-    font-size: 220%;
-    margin-left: 2%;
-    padding-bottom: 10px;
+.all-playlist{
+    margin: 0 1%;
 }
 .playlist{
     float: left;
-    width: 15%;
+    width: 15.5%;
     height: fit-content;
-    margin-left: 2%;
-    padding-right: 15.5%;
-    margin-right: 0.3%;
-    margin-bottom: 10px;
+    margin:0 1% 1%;
+    padding-right: 15.8%;
     color: white;
     font-size: 70%;
     background-color: rgb(39, 37, 37);
@@ -141,67 +119,45 @@ h1.title{
     float: left;
     border-radius: 5px;
 }
-
-#title-album{
-    margin-top: 22vh;
-}
 .playlist > h2{
     float: left;
     padding: 10px 3px 6px 10px;
 }
-.title-album1{
+.album-name{
     text-decoration: none;
     color: #ffff;
-    font-size: 220%;
+    font-size: 180%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
-    margin-bottom: 2%;
 }
-.see-all{
+.see-all {
     text-decoration: none;
     color: #ffff;
-    font-size: 120%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-    margin-bottom: 2%;
+    font-size: 130%;    
+    font-family:monospace;
+    font-weight: bold;  
+    text-transform: uppercase;
 }
-.title2112{
+.title{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 10px 2%;
-
-}
-
-/* .album:hover{
-    transform:scale(1.05)
-} */
-h1.title.title-album{
-    float: left;
-    color: white;
-}
-h2.title-top{
-    color: #ffff;
-}
-.albumimg {
-    cursor:pointer
-}
+    padding:0 2% 1%;       
+}  
 .album-poster{
-    margin: 0 2%;
+    margin: 0 2% 1%;
     display: flex;
-    justify-content: space-between;
-
-    
+    justify-content: space-between; 
 }
 .album{
     float: left;
-    background-color: #181818; 
+    background-color: #181818;
+    margin-top: 0%; 
     padding:10px 10px 0px 10px; 
     border-radius: 8px;
     max-width: 19%;
     box-sizing: border-box;
     overflow:hidden;
-    
 }
 .album > img{
     width: 92%;
@@ -210,17 +166,18 @@ h2.title-top{
     margin-right: auto;
     margin-left: auto;
     padding: 5px;
+    cursor:pointer;
 }
 .album > h3{ 
     color:white; 
     font-size :15px; 
     text-align: left;
 }
-
 .album > p{
     color:white; 
     text-align: left;
 }
 .album:hover{
     background-color: #222222;
+    box-shadow: 0 5px 10px 0px black;
 }

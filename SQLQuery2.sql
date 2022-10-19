@@ -1,1 +1,0 @@
-select(DATEPART(WEEKDAY,getdate()))

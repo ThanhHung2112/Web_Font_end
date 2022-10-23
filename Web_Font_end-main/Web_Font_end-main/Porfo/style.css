@@ -1,0 +1,58 @@
+body{
+    font-family: IBM Plex Mono;
+    font-size: 15;
+    width: 1250px;
+    margin: 0px auto;    
+}       
+#inf {
+    background-color: gray;
+    width: 1250px;
+    text-align: center;
+    height: 800px;
+}   
+#skill {
+    background-color: rgb(255, 255, 255);
+    width: 1250px;
+    height: 700px;
+    margin: 0px auto;
+
+}
+#project {
+    background-color: red;
+    width: 1250px;
+    min-height: 1000px ;
+    text-align: center;
+}
+#my_sites {
+    background-color: gray;
+    width: 1250px;
+    height: 300px;
+    text-align: center ;
+    margin: auto;
+    line-height: 300px; 
+}
+#inf img {
+    line-height: 100px;
+}   
+#inf ul {
+    margin: 0px;
+    padding: 0px;
+}
+#inf ul li {
+    list-style: none;
+    float: left;
+}
+#inf ul li a {
+    text-decoration: none;
+    display: block;
+    height: 10px;
+    border: 1px solid#f1f1f1;
+    
+}
+#inf ul li a.active {
+    background: #1C72A8;
+    text-align: center ;
+    margin: auto;
+    padding: 20px 30px 20px 30px;
+
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div id="root">
+        <div id="root__left-sidebar">
+            
+        </div>
+        <div id="root__main-view" style="background-color: rbga(74,53,144,0.35); ">
+            <div id="root__top-container" style="--headerColor: rgba(32, 22, 64, -0.5);  top: 0px; left: 200px;">
+                <div id="root__top__add-play-btn">
+                    <div id="root__top__move-action">
+                        <img class="root__top__move-action__prev" src="./assets/img/prev.png" alt="" style="opacity: 1; cursor: default;">
+                        <img class="root__top__move-action__next" src="./assets/img/prev.png" alt="" style="opacity: 0.5; cursor: not-allowed;">
+                    </div>
+                   
+                </div>
+                <div id="root__top__user" style="background-color: rgb(40, 40, 40);">
+                    <img src="./assets/img/thang.jpg" id="root__top__user__avatar">
+                    <div id="root__top__user__name">Thang</div>
+                    <img id="root__top__user__drop-icon" src="assets/img/drop-icon.png">
+                </div>
+    
+            </div>
+            <div id="on-open-playlist__header">
+                <img id="on-open-playlist__header__img" src="./assets/img/thang.jpg">
+                <div id="on-open-playlist__header__title">
+                  <div id="on-open-playlist__header__title__type">profile</div>
+                  <div id="on-open-playlist__header__title__name" style="white-space: nowrap; font-size: 89px;">Thang</div>
+                  
+                  <div id="on-open-playlist__header__title__playlist-info">
+                    
+                    <span id="on-open-playlist__header__title__playlist-info__owner">3 Public Playlists <span>• 24 Following</span>
+                  </span>
+                    </div>
+                </div>
+            </div>
+            <div id="on-open-playlist__body">
+                <div id="on-open-playlist__body__btn">
+                    <img id="on-open-playlist__body__btns__see-more" src="./assets/img/see-more.png">
+                </div>
+                
+                <div class="root__main-view__playlist-section" section-type="best-of-artist">
+                  <div class="introduction">
+                    <div>
+                        <a href="#" class="title">Top artists this month</a>
+                        <span class="description">Only visible to you</span>
+                    </div>
+                    <a class="see-all" href="#">See all</a>
+                  </div>
+                    
+                    <ul class="playlists">
+                    
+                      <li class="playlist is-a-playlist best-of-artist" playlist-id="14">
+                        <div class="playlist__playbtn">
+                          <img class="playlist-img" src="./assets/img/songer-Lisa-lalisa.jpg" style="width: 158px;">
+                          
+                          <div class="play-now-shadow" style="opacity: 0;"></div>
+                        </div>
+                        <div class="playlist__description">
+                            <div class="playlist__description__title">Lisa (BlackPink)</div>
+                            <div class="playlist__description__artist">Artists </div>
+                        </div>
+                      </li>
+                      <li class="playlist is-a-playlist best-of-artist" playlist-id="16">
+                        <div class="playlist__playbtn">
+                          <img class="playlist-img" src="./assets/img/songer-Rose-on the ground.jpg" style="width: 158px;">
+                          
+                          <div class="play-now-shadow" style="opacity: 0;"></div>
+                        </div>
+                        <div class="playlist__description">
+                            <div class="playlist__description__title">Rosé (BlackPink)</div>
+                            <div class="playlist__description__artist">Artists</div>
+                        </div>
+                      </li>
+                      <li class="playlist is-a-playlist best-of-artist" playlist-id="18">
+                        <div class="playlist__playbtn">
+                          <img class="playlist-img" src="./assets/img/singer-vũ.jpg" style="width: 158px;">
+                          
+                          <div class="play-now-shadow" style="opacity: 0;"></div>
+                        </div>
+                        <div class="playlist__description">
+                            <div class="playlist__description__title">Vũ</div>
+                            <div class="playlist__description__artist">Artists</div>
+                        </div>
+                      </li>
+                      <li class="playlist is-a-playlist best-of-artist" playlist-id="19">
+                        <div class="playlist__playbtn">
+                          <img class="playlist-img" src="./assets/img/singer-sơn tùng mtp.webp" style="width: 158px;">
+                          
+                          <div class="play-now-shadow" style="opacity: 0;"></div>
+                        </div>
+                        <div class="playlist__description">
+                            <div class="playlist__description__title">Sơn Tùng</div>
+                            <div class="playlist__description__artist">Artists</div>
+                        </div>
+                      </li>
+                      <li class="playlist is-a-playlist best-of-artist" playlist-id="17">
+                        <div class="playlist__playbtn">
+                          <img class="playlist-img" src="./assets/img/singer-pha mạnh quỳnh.jpg" style="width: 158px;">
+                          
+                          <div class="play-now-shadow" style="opacity: 0;"></div>
+                        </div>
+                        <div class="playlist__description">
+                            <div class="playlist__description__title">Phan Mạnh Quỳnh</div>
+                            <div class="playlist__description__artist">Artists</div>
+                        </div>
+                      </li>
+                    </ul>
+                    
+                    
+                  </div> 
+                </div>
+                <div class="root__main-view__playlist-section" section-type="best-of-artist">
+                  <div class="introduction">
+                    <div>
+                        <a href="#" class="title">Top tracks this month</a>
+                        <span class="description">Only visible to you</span>
+                    </div>
+                    <a class="see-all" href="#">See all</a>
+                  </div>
+                        
+                <ul class="song"  style="background-color: rgba(255, 255, 255, 0);" display="flex">
+                  <li class="number"><span style="display: block;">1</span><img class="playing-gif" src="./assets/images/main-view/icon-playing.gif" style="display: none;"></li>
+                  <li class="title">
+                    <img class="song-img" src="./assets/img/songer-Rose-on the ground.jpg">
+                    <div class="song-info">
+                        <div class="song-info__name" style="color: white;">On The Ground</div>
+                        <div class="song-info__artist">Rosé (BlackPink)</div>
+                    </div>
+                  </li>
+                  <li class="album">On The Ground</li>
+                  
+                  <li class="more">
+                    <img class="more__favorite" src="./assets/img/favorite.png">
+                    <span class="more__time">4:45</span>
+                    
+                  </li>
+                </ul>
+                <ul class="song" style="background-color: rgba(255, 255, 255, 0);" display="flex">
+                  <li class="number"><span style="display: block;">2</span><img class="playing-gif" src="./assets/images/main-view/icon-playing.gif" style="display: none;"></li>
+                  <li class="title">
+                    <img class="song-img" src="./assets/img/songer-Lisa-lalisa.jpg">
+                    <div class="song-info">
+                        <div class="song-info__name" style="color: white;">Lalisa</div>
+                        <div class="song-info__artist">Lisa (BlackPink)</div>
+                    </div>
+                  </li>
+                  <li class="album">Lalisa</li>
+                  
+                  <li class="more">
+                    <img class="more__favorite" src="./assets/img/favorite.png">
+                    <span class="more__time">4:45</span>
+                    
+                  </li>
+                </ul>
+                <ul class="song"  style="background-color: rgba(255, 255, 255, 0);" display="flex">
+                  <li class="number"><span style="display: block;">3</span><img class="playing-gif" src="./assets/images/main-view/icon-playing.gif" style="display: none;"></li>
+                  <li class="title">
+                    <img class="song-img" src="./assets/img/bông hoajpg.jpg">
+                    <div class="song-info">
+                        <div class="song-info__name" style="color: white;">Bông hoa đẹp nhất</div>
+                        <div class="song-info__artist">Quân AP</div>
+                    </div>
+                  </li>
+                  <li class="album">Bông hoa đẹp nhất</li>
+                  
+                  <li class="more">
+                    <img class="more__favorite" src="./assets/img/favorite.png">
+                    <span class="more__time">4:45</span>
+                    
+                  </li>
+                </ul>
+                <ul class="song"  style="background-color: rgba(255, 255, 255, 0);" display="flex">
+                  <li class="number"><span style="display: block;">4</span><img class="playing-gif" src="./assets/images/main-view/icon-playing.gif" style="display: none;"></li>
+                  <li class="title">
+                    <img class="song-img" src="./assets/img/singer-sơn tùng-lạc trôi.jpg">
+                    <div class="song-info">
+                        <div class="song-info__name" style="color: white;">Lạc trôi</div>
+                        <div class="song-info__artist">Sơn Tùng MTP</div>
+                    </div>
+                  </li>
+                  <li class="album">Lạc trôi</li>
+                  
+                  <li class="more">
+                    <img class="more__favorite" src="./assets/img/favorite.png">
+                    <span class="more__time">4:45</span>
+                    
+                  </li>
+                </ul>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                </div>
+                <div class="root__main-view__playlist-section" section-type="best-of-artist">
+                  
+                  <div class="introduction">
+                    <div>
+                        <a href="#" class="title">Following</a>
+                        <span class="description"></span>
+                    </div>
+                    <a class="see-all" href="#">See all</a>
+                  </div>
+                  <ul class="playlists">
+                    
+                <li class="playlist is-a-playlist best-of-artist" playlist-id="14">
+                  <div class="playlist__playbtn">
+                    <img class="playlist-img" src="./assets/img/img7.jpg" style="width: 158px;">
+                    
+                    <div class="play-now-shadow" style="opacity: 0;"></div>
+                  </div>
+                  <div class="playlist__description">
+                      <div class="playlist__description__title">Jisoo</div>
+                      <div class="playlist__description__artist">Profile</div>
+                  </div>
+                </li>
+                <li class="playlist is-a-playlist best-of-artist" playlist-id="16">
+                  <div class="playlist__playbtn">
+                    <img class="playlist-img" src="./assets/img/nancy4.jpg" style="width: 158px;">
+                    
+                    <div class="play-now-shadow" style="opacity: 0;"></div>
+                  </div>
+                  <div class="playlist__description">
+                      <div class="playlist__description__title">Nancy</div>
+                      <div class="playlist__description__artist">Profile</div>
+                  </div>
+                </li>
+                <li class="playlist is-a-playlist best-of-artist" playlist-id="18">
+                  <div class="playlist__playbtn">
+                    <img class="playlist-img" src="./assets/img/img9.jpg" style="width: 158px;">
+                    
+                    <div class="play-now-shadow" style="opacity: 0;"></div>
+                  </div>
+                  <div class="playlist__description">
+                      <div class="playlist__description__title">Jennie</div>
+                      <div class="playlist__description__artist">Profile</div>
+                  </div>
+                </li>
+                <li class="playlist is-a-playlist best-of-artist" playlist-id="19">
+                  <div class="playlist__playbtn">
+                    <img class="playlist-img" src="./assets/img/IU.jpg" style="width: 158px;">
+                    
+                    <div class="play-now-shadow" style="opacity: 0;"></div>
+                  </div>
+                  <div class="playlist__description">
+                      <div class="playlist__description__title">IU</div>
+                      <div class="playlist__description__artist">Profile</div>
+                  </div>
+                </li>
+                <li class="playlist is-a-playlist best-of-artist" playlist-id="17">
+                  <div class="playlist__playbtn">
+                    <img class="playlist-img" src="./assets/img/irenejfif.jfif" style="width: 158px;">
+                    
+                    <div class="play-now-shadow" style="opacity: 0;"></div>
+                  </div>
+                  <div class="playlist__description">
+                      <div class="playlist__description__title">Irene</div>
+                      <div class="playlist__description__artist">Profile</div>
+                  </div>
+                </li>
+                  </ul></div>
+                  </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</body>
+</html>

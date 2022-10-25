@@ -1,9 +1,12 @@
+
 body{
     background-color: black ;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     min-width: 1000px;
 }
 #top{
+    position:absolute;
+    z-index: 10;
     position: fixed;
     top: 0;
     left: 0;
@@ -21,6 +24,7 @@ body{
     display: flex;
     flex-direction: column;
     color: #b3b3b3;
+    overflow-y: auto;
 }
 #root__left-sidebar__navigation {
     padding: 0px 8px;
@@ -37,7 +41,7 @@ body{
     align-items: center; 
 }
 #root__left-sidebar__navigation > li > img {
-    width: 13%;
+    width: 12%;
     margin-right: 20px;
     opacity: 0.9;
     border-radius: 5px;
@@ -58,13 +62,13 @@ body{
     font-family: Gotham, sans-serif;
     line-height: 32px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 15px;
     cursor: default; 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#root__left-sidebar__my-playlists>li>span:hover{
+#root__left-sidebar__navigation> li > span:hover{
     color: #ffff;
 }
 .left{
@@ -73,11 +77,10 @@ body{
     float: left;
     padding-block-end: 700px;
     border-radius: 8px;
-    position: absolute;
     white-space: nowrap;
     overflow: hidden;
     min-width:200px;
-    position: fixed;
+    position:fixed;
 }
 .right{
     background-color: #121212;
@@ -85,8 +88,8 @@ body{
     width: 82%;
     float: right;
     border-radius: 8px;
-    margin: 0 auto;
     min-width: 70%;
+    position: relative;
 }
 img.cover{
     width: 96%;
@@ -180,4 +183,206 @@ img.cover{
 .album:hover{
     background-color: #222222;
     box-shadow: 0 5px 10px 0px black;
+}
+
+
+.singer{
+    float: left;
+    background-color: #181818;
+    margin-top: 0%; 
+    padding:10px 10px 0px 10px; 
+    border-radius: 8px;
+    max-width: 19%;
+    box-sizing: border-box;
+    overflow:hidden;
+}
+
+
+.singer > img{
+    width: 92%;
+    border-radius: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px;
+    cursor:pointer;
+    filter: drop-shadow(5px 5px 10px );
+}
+.singer > h3{ 
+    color:white; 
+    font-size :15px; 
+    text-align: left;
+}
+.singer > p{
+    color:white; 
+    text-align: left;
+}
+.singer:hover{
+    background-color: #222222;
+    box-shadow: 0 5px 10px 0px black;
+}
+
+#root__left-sidebar__my-playlists{
+    width: 100%;
+    margin-top: 5%;
+    
+}
+
+#root__left-sidebar__my-playlists .item{
+    position:relative;
+    cursor: pointer;
+
+}
+
+#root__left-sidebar__my-playlists .item a{
+    text-decoration: none;
+    font-family: Gotham, sans-serif;
+    line-height: 32px;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: default; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #b3b3b3;
+    
+}
+
+#root__left-sidebar__my-playlists .item a:hover{
+    opacity: 50%;
+}
+
+#root__left-sidebar__my-playlists .item .sub-menu{
+    background-color: #211f1f;
+    display: none;
+    padding-left: 5%;
+}
+
+#Create-playlist{
+    background-color: rgba(0, 0, 0 , 0.75);
+    width: 85%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10;
+    /* visibility: hidden; */
+    display: none
+}
+
+.playlist-new{
+    width: 524px;
+    height: 7%;
+    background-color: #1f1f1f;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding-top: 1%;
+}
+.chu{
+    padding-left: 5%;
+    padding-top: 3%;
+    height: 60px;
+    width: 50px;
+    color: #FFFFFF;
+    font-family: CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif),sans-serif;
+    font-size: 24px;
+    padding-bottom: 2%;
+}
+
+.playlist-new > img{
+   height: 25px;
+   margin-right: 5%;
+   margin-top: 3%;
+}
+.playlist-new > img:hover{
+    transform: scale(1.1);
+}
+.playlist-new > h1{
+    width: 100%;
+    margin: 0px;
+    margin-right: 1%;
+    justify-content: space-between;
+}
+.playlist-new{
+    display: flex;
+}
+.tao{
+    width: 524px;
+    height: 220px;
+    background-color: #1f1f1f;
+    display: flex;
+}
+.tenplaylist{
+    margin-top: 6.5%;
+    margin-bottom: 6%;
+    background-color: #282828;
+    color: #FFFFFF;
+    width: 280px;
+    border: none;
+    height: 40px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding-left: 10px;
+}
+.mota{
+    height: 120px;
+    color: #FFFFFF;
+    width: 280px;
+    background-color: #282828;
+    border-radius: 4px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding-left: 10px;
+}
+.tao > img{
+    width: 180px;
+    height: 180px;
+    padding: 0%;
+    margin: 4%;  
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.nutthemplaylist{
+    width: 524px;
+    height: 70px;
+    background-color: #1f1f1f;
+    text-align: right;
+}
+.nutthemplaylist > button{
+    margin-right: 3.5%;
+    width: 100px;
+    height: 55px;
+    border-radius: 50px;
+    font-size: inherit;
+    background-color: #FFFFFF;
+    color: #1f1f1f;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.nutthemplaylist > button:hover{
+    transform:scale(1.05);
+    font-size: 17px;
+}
+.dongcuoicung{
+    width: 524px;
+    height: 60px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #1f1f1f;
+    color: #FFFFFF;
+}
+.dongcuoicung > p{
+    margin: 0%;
+    font-size: 14px;
+    font-weight: 800;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.mainplaylist{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
 }

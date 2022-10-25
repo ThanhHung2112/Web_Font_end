@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="css\style.css">
     <title>3S Mucsic</title>
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/js.jsx"></script>
 </head>
 <header>
      <!-- Top -->
@@ -17,32 +17,106 @@
     </div>
 </header>
 <body>
+    
     <!-- middle -->
     <div id="middle">
         <div class="left">      
             <div id="root">
                 <div id="root__left-sidebar"> 
                     <ul id="root__left-sidebar__navigation">
-                        <li id="root__left-sidebar__element"><img src="img/library.PNG"><span>Your library</span></li>
-                        <li id="root__left-sidebar__element"><img  src="img/Premium.png"><span>Premium</span></li>
-                        <li id="root__left-sidebar__element"><img src="img/create-playlist.PNG"><span>Create Playlist</span></li>
-                        <li id="root__left-sidebar__element"><img src="img/loveimg.jpg"><span>Liked Songs</span></li>
+                        <li><img src="img/library.PNG"><span>Your library</span></li>
+                        <li><img  src="img/Premium.png"><span>Premium</span></li>
+                        <li id="Create_playlist-icon" ><img src="img/create-playlist.PNG"><span onclick="Show_createplaylist_tab()">Create Playlist</span></li>
+                        <li><img src="img/loveimg.jpg"><span>Liked Songs</span></li>
                     </ul>
                     
                     <div id="root__left-sidebar__dashline">
                         <hr/>
                         <div id="root__left-sidebar__dashline__shadow"></div>
                     </div>
-                    <ul id="root__left-sidebar__my-playlists">
-                        <li style="color: rgb(179, 179, 179);"><span>Indie</span></li>
-                        <li style="color: rgb(179, 179, 179);"><span>Jonas Blue</span></li>
-                        <li style="color: rgb(179, 179, 179);"><span>Kygo</span></li>
-                        <li style="color: rgb(179, 179, 179);"><span>all</span></li>
-                    </ul>
+                    <div id="root__left-sidebar__my-playlists">
+                        <div class = "item">
+                            <a class = "sub-btn" onclick="Show_list_choice()">Indie</a>
+                            <div class = "sub-menu">
+                                <a href = "##" class = "sub-item">Thêm vào danh sách</a>
+                                <a href = "##" class = "sub-item">Chuyển đến radio</a>
+                                <a href = "##" class = "sub-item">Xóa khỏi hồ sơ</a>
+                                <a href = "##" class = "sub-item">Chỉnh sửa</a>
+                                <a href = "##" class = "sub-item">Đổi tên</a>
+                                <a href = "##" class = "sub-item">Đặt thành riêng tư</a>
+                                <a href = "##" class = "sub-item">Tải xuống</a>
+                                <a href = "##" class = "sub-item">Chia sẻ</a>
+                            </div>
+                        </div>
+                        <div class = "item">
+                            <a class = "sub-btn">Jonas Blue</a>
+                            <div class = "sub-menu">
+                                <a href = "##" class = "sub-item">Thêm vào danh sách</a>
+                                <a href = "##" class = "sub-item">Chuyển đến radio</a>
+                                <a href = "##" class = "sub-item">Xóa khỏi hồ sơ</a>
+                                <a href = "##" class = "sub-item">Chỉnh sửa</a>
+                                <a href = "##" class = "sub-item">Đổi tên</a>
+                                <a href = "##" class = "sub-item">Đặt thành riêng tư</a>
+                                <a href = "##" class = "sub-item">Tải xuống</a>
+                                <a href = "##" class = "sub-item">Chia sẻ</a>
+                            </div>
+                        </div>
+                        <div class = "item">
+                            <a class = "sub-btn">Kygo</a>
+                            <div class = "sub-menu">
+                                <a href = "##" class = "sub-item">Thêm vào danh sách</a>
+                                <a href = "##" class = "sub-item">Chuyển đến radio</a>
+                                <a href = "##" class = "sub-item">Xóa khỏi hồ sơ</a>
+                                <a href = "##" class = "sub-item">Chỉnh sửa</a>
+                                <a href = "##" class = "sub-item">Đổi tên</a>
+                                <a href = "##" class = "sub-item">Đặt thành riêng tư</a>
+                                <a href = "##" class = "sub-item">Tải xuống</a>
+                                <a href = "##" class = "sub-item">Chia sẻ</a>
+                            </div>
+                        </div>
+                        <div class = "item">
+                            <a class = "sub-btn">Lofi</a>
+                            <div class = "sub-menu">
+                                <a href = "##" class = "sub-item">Thêm vào danh sách</a>
+                                <a href = "##" class = "sub-item">Chuyển đến radio</a>
+                                <a href = "##" class = "sub-item">Xóa khỏi hồ sơ</a>
+                                <a href = "##" class = "sub-item">Chỉnh sửa</a>
+                                <a href = "##" class = "sub-item">Đổi tên</a>
+                                <a href = "##" class = "sub-item">Đặt thành riêng tư</a>
+                                <a href = "##" class = "sub-item">Tải xuống</a>
+                                <a href = "##" class = "sub-item">Chia sẻ</a>
+                            </div>
+                        </div>
+                        <div class = "item">
+                            <a href = "##">Tất cả playlist</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="right">
+            <div id="Create-playlist">
+                <div class="mainplaylist">
+                    <div class="playlist-new">
+                        <h1 class="chu">Sửa thông tin chi tiết</h1>
+                            <img  onclick="Show_createplaylist_tab()" src="img/icons8-x-50.png" alt=""> 
+                    </div>
+                    <div class="tao">
+                        <img src="img/Screenshot 2022-10-22 101641.png" alt="">
+                        <div>
+                            <input class="tenplaylist" type="text" placeholder="Nhập tên playlist">
+                            <input class="mota" type="text" placeholder="Nhập mô tả playlist">
+                        </div>
+                    </div>
+                    <div class="nutthemplaylist">
+                        <button onclick="Show_createplaylist_tab()">Lưu</button>
+                    </div>
+                    <div class="dongcuoicung">
+                        <p>Bằng cách tiếp tục, bạn đồng ý cho phép Spotify truy cập vào 
+                            hình ảnh bạn đã chọn để tải lên. Vui lòng đảm bảo bạn có quyền tải lên hình ảnh.</p>
+                    </div>
+                </div>
+            </div>
             <a href=""><img class="cover" src="img\cover2.png" alt="poster"></a>
             
             <div class="playlist-suggestion">
@@ -76,10 +150,11 @@
                     </div>      
                 </div>
             </div>
+            <!-- Cóp từ đoạn ni -->
             <div id="album-recomment">
                 <div class="title">
-                    <a href="" class="album-name">Album mới</a>
-                    <a href="" class="see-all">See all</a>
+                    <a href="##" class="album-name">Album mới</a>
+                    <a href="##" class="see-all">See all</a>
                 </div>
                 <div class="album-poster">  
                     <div class="album">
@@ -90,7 +165,7 @@
                     <div class="album">
                         <img src = "img\28reason.jpg" alt ="Album" />
                         <h3>28 Reason</h3>
-                        <p>Khi yêu ai thì cần con mẹ gì  lí do ...</p>
+                        <p>Khi yêu ai thì cần gì phải tìm lí do ...</p>
                     </div>
                     <a  class="album">
                         <img src = "img\lost.jpg" alt ="Album" />
@@ -109,10 +184,43 @@
                     </div>   
                 </div>
             </div> 
+            <div id="top_singer">
+                <div class="title">
+                    <a href="##" class="album-name">Nghệ sĩ nổi bật</a>
+                    <a href="##" class="see-all">See all</a>
+                </div>
+                <div class="album-poster">  
+                    <div class="singer">
+                        <img src = "img\singer_vu.jpg" alt ="Singer" />
+                        <h3 style = "text-align: center;">Vũ</h3>
+                        <p style = "text-align: center;">745K người nghe hàng tháng</p>
+                    </div>
+                    <div class="singer">
+                        <img src = "img\singer_ed.jpg" alt ="Singer" />
+                        <h3 style = "text-align: center;">Ed Sheeran</h3>
+                        <p style = "text-align: center;">78.546K người nghe hàng tháng</p>
+                    </div>
+                    <a  class="singer">
+                        <img src = "img\singer_hien.jpg" alt ="Singer" />
+                        <h3 style = "text-align: center;">Diệu Hiền</h3>
+                        <p style = "text-align: center;">0 người nghe hàng tháng</p>
+                    </a>
+                    <div class="singer">
+                        <img src = "img\singer_rose.jpg" alt ="Singer" />
+                        <h3 style = "text-align: center;">ROSÉ</h3>
+                        <p style = "text-align: center;">3.353K người nghe hàng tháng</p>
+                    </div>
+                    <div class="singer">
+                        <img src = "img\singer_billie.jpg" alt ="Singer" />
+                        <h3 style = "text-align: center;">Billie Eilish</h3>
+                        <p style = "text-align: center;">49.712K người nghe hàng tháng</p>
+                    </div>   
+                </div>
+            </div> 
             <div id="album-recomment">
                 <div class="title">
-                    <a href="" class="album-name">Album mới</a>
-                    <a href="" class="see-all">See all</a>
+                    <a href="##" class="album-name">Album mới</a>
+                    <a href="##" class="see-all">See all</a>
                 </div>
                 <div class="album-poster">  
                     <div class="album">
@@ -123,7 +231,73 @@
                     <div class="album">
                         <img src = "img\28reason.jpg" alt ="Album" />
                         <h3>28 Reason</h3>
-                        <p>Khi yêu ai thì cần con mẹ gì  lí do ...</p>
+                        <p>Khi yêu ai thì cần gì phải tìm lí do ...</p>
+                    </div>
+                    <a  class="album">
+                        <img src = "img\lost.jpg" alt ="Album" />
+                        <h3>Lost</h3>
+                        <p>Lòng lạnh lẽo, lo lắng, lúc lạc  ...</p>
+                    </a>
+                    <div class="album">
+                        <img src = "img\4th.jpg" alt ="Album" />
+                        <h3>2 Baddies</h3>
+                        <p>Mình chưa nghe gì nên kb gì  cả...</p>
+                    </div>
+                    <div class="album">
+                        <img src = "img\bp.jpg" alt ="Album" />
+                        <h3>Born Pink</h3>
+                        <p>Black Pink in your è rì ớ...</p>
+                    </div>   
+                </div>
+            </div>
+            <div id="album-recomment">
+                <div class="title">
+                    <a href="##" class="album-name">Album mới</a>
+                    <a href="##" class="see-all">See all</a>
+                </div>
+                <div class="album-poster">  
+                    <div class="album">
+                        <img src = "img\album_rap.jpg" alt ="Album" />
+                        <h3>Rap Việt cũ mà hay</h3>
+                        <p>Mùa đông nghe nhạc nè các ...</p>
+                    </div>
+                    <div class="album">
+                        <img src = "img\28reason.jpg" alt ="Album" />
+                        <h3>28 Reason</h3>
+                        <p>Khi yêu ai thì cần gì phải tìm lí do ...</p>
+                    </div>
+                    <a  class="album">
+                        <img src = "img\lost.jpg" alt ="Album" />
+                        <h3>Lost</h3>
+                        <p>Lòng lạnh lẽo, lo lắng, lúc lạc  ...</p>
+                    </a>
+                    <div class="album">
+                        <img src = "img\4th.jpg" alt ="Album" />
+                        <h3>2 Baddies</h3>
+                        <p>Mình chưa nghe gì nên kb gì  cả...</p>
+                    </div>
+                    <div class="album">
+                        <img src = "img\bp.jpg" alt ="Album" />
+                        <h3>Born Pink</h3>
+                        <p>Black Pink in your è rì ớ...</p>
+                    </div>   
+                </div>
+            </div>
+            <div id="album-recomment">
+                <div class="title">
+                    <a href="##" class="album-name">Album mới</a>
+                    <a href="##" class="see-all">See all</a>
+                </div>
+                <div class="album-poster">  
+                    <div class="album">
+                        <img src = "img\album_rap.jpg" alt ="Album" />
+                        <h3>Rap Việt cũ mà hay</h3>
+                        <p>Mùa đông nghe nhạc nè các ...</p>
+                    </div>
+                    <div class="album">
+                        <img src = "img\28reason.jpg" alt ="Album" />
+                        <h3>28 Reason</h3>
+                        <p>Khi yêu ai thì cần gì phải tìm lí do ...</p>
                     </div>
                     <a  class="album">
                         <img src = "img\lost.jpg" alt ="Album" />
@@ -142,370 +316,7 @@
                     </div>   
                 </div>
             </div>  
-            <div id="album-recomment">
-                <div class="title">
-                    <a href="" class="album-name">Album mới</a>
-                    <a href="" class="see-all">See all</a>
-                </div>
-                <div class="album-poster">  
-                    <div class="album">
-                        <img src = "img\album_rap.jpg" alt ="Album" />
-                        <h3>Rap Việt cũ mà hay</h3>
-                        <p>Mùa đông nghe nhạc nè các ...</p>
-                    </div>
-                    <div class="album">
-                        <img src = "img\28reason.jpg" alt ="Album" />
-                        <h3>28 Reason</h3>
-                        <p>Khi yêu ai thì cần con mẹ gì  lí do ...</p>
-                    </div>
-                    <a  class="album">
-                        <img src = "img\lost.jpg" alt ="Album" />
-                        <h3>Lost</h3>
-                        <p>Lòng lạnh lẽo, lo lắng, lúc lạc  ...</p>
-                    </a>
-                    <div class="album">
-                        <img src = "img\4th.jpg" alt ="Album" />
-                        <h3>2 Baddies</h3>
-                        <p>Mình chưa nghe gì nên kb gì  cả...</p>
-                    </div>
-                    <div class="album">
-                        <img src = "img\bp.jpg" alt ="Album" />
-                        <h3>Born Pink</h3>
-                        <p>Black Pink in your è rì ớ...</p>
-                    </div>   
-                </div>
-            </div>
-            <div id="album-recomment">
-                <div class="title">
-                    <a href="" class="album-name">Album mới</a>
-                    <a href="" class="see-all">See all</a>
-                </div>
-                <div class="album-poster">  
-                    <div class="album">
-                        <img src = "img\album_rap.jpg" alt ="Album" />
-                        <h3>Rap Việt cũ mà hay</h3>
-                        <p>Mùa đông nghe nhạc nè các ...</p>
-                    </div>
-                    <div class="album">
-                        <img src = "img\28reason.jpg" alt ="Album" />
-                        <h3>28 Reason</h3>
-                        <p>Khi yêu ai thì cần con mẹ gì  lí do ...</p>
-                    </div>
-                    <a  class="album">
-                        <img src = "img\lost.jpg" alt ="Album" />
-                        <h3>Lost</h3>
-                        <p>Lòng lạnh lẽo, lo lắng, lúc lạc  ...</p>
-                    </a>
-                    <div class="album">
-                        <img src = "img\4th.jpg" alt ="Album" />
-                        <h3>2 Baddies</h3>
-                        <p>Mình chưa nghe gì nên kb gì  cả...</p>
-                    </div>
-                    <div class="album">
-                        <img src = "img\bp.jpg" alt ="Album" />
-                        <h3>Born Pink</h3>
-                        <p>Black Pink in your è rì ớ...</p>
-                    </div>   
-                </div>
-            </div>
-            <div id="album-recomment">
-                <div class="title">
-                    <a href="" class="album-name">Album mới</a>
-                    <a href="" class="see-all">See all</a>
-                </div>
-                <div class="album-poster">  
-                    <div class="album">
-                        <img src = "img\album_rap.jpg" alt ="Album" />
-                        <h3>Rap Việt cũ mà hay</h3>
-                        <p>Mùa đông nghe nhạc nè các ...</p>
-                    </div>
-                    <div class="album">
-                        <img src = "img\28reason.jpg" alt ="Album" />
-                        <h3>28 Reason</h3>
-                        <p>Khi yêu ai thì cần con mẹ gì  lí do ...</p>
-                    </div>
-                    <a  class="album">
-                        <img src = "img\lost.jpg" alt ="Album" />
-                        <h3>Lost</h3>
-                        <p>Lòng lạnh lẽo, lo lắng, lúc lạc  ...</p>
-                    </a>
-                    <div class="album">
-                        <img src = "img\4th.jpg" alt ="Album" />
-                        <h3>2 Baddies</h3>
-                        <p>Mình chưa nghe gì nên kb gì  cả...</p>
-                    </div>
-                    <div class="album">
-                        <img src = "img\bp.jpg" alt ="Album" />
-                        <h3>Born Pink</h3>
-                        <p>Black Pink in your è rì ớ...</p>
-                    </div>   
-                </div>
-            </div>
-            <div id="album-recomment">
-                <div class="title">
-                    <a href="" class="album-name">Album mới</a>
-                    <a href="" class="see-all">See all</a>
-                </div>
-                <div class="album-poster">  
-                    <div class="album">
-                        <img src = "img\album_rap.jpg" alt ="Album" />
-                        <h3>Rap Việt cũ mà hay</h3>
-                        <p>Mùa đông nghe nhạc nè các ...</p>
-                    </div>
-                    <div class="album">
-                        <img src = "img\28reason.jpg" alt ="Album" />
-                        <h3>28 Reason</h3>
-                        <p>Khi yêu ai thì cần con mẹ gì  lí do ...</p>
-                    </div>
-                    <a  class="album">
-                        <img src = "img\lost.jpg" alt ="Album" />
-                        <h3>Lost</h3>
-                        <p>Lòng lạnh lẽo, lo lắng, lúc lạc  ...</p>
-                    </a>
-                    <div class="album">
-                        <img src = "img\4th.jpg" alt ="Album" />
-                        <h3>2 Baddies</h3>
-                        <p>Mình chưa nghe gì nên kb gì  cả...</p>
-                    </div>
-                    <div class="album">
-                        <img src = "img\bp.jpg" alt ="Album" />
-                        <h3>Born Pink</h3>
-                        <p>Black Pink in your è rì ớ...</p>
-                    </div>   
-                </div>
-            </div>
-            <div id="album-recomment">
-                <div class="title">
-                    <a href="" class="album-name">Album mới</a>
-                    <a href="" class="see-all">See all</a>
-                </div>
-                <div class="album-poster">  
-                    <div class="album">
-                        <img src = "img\album_rap.jpg" alt ="Album" />
-                        <h3>Rap Việt cũ mà hay</h3>
-                        <p>Mùa đông nghe nhạc nè các ...</p>
-                    </div>
-                    <div class="album">
-                        <img src = "img\28reason.jpg" alt ="Album" />
-                        <h3>28 Reason</h3>
-                        <p>Khi yêu ai thì cần con mẹ gì  lí do ...</p>
-                    </div>
-                    <a  class="album">
-                        <img src = "img\lost.jpg" alt ="Album" />
-                        <h3>Lost</h3>
-                        <p>Lòng lạnh lẽo, lo lắng, lúc lạc  ...</p>
-                    </a>
-                    <div class="album">
-                        <img src = "img\4th.jpg" alt ="Album" />
-                        <h3>2 Baddies</h3>
-                        <p>Mình chưa nghe gì nên kb gì  cả...</p>
-                    </div>
-                    <div class="album">
-                        <img src = "img\bp.jpg" alt ="Album" />
-                        <h3>Born Pink</h3>
-                        <p>Black Pink in your è rì ớ...</p>
-                    </div>   
-                </div>
-                <div id="album-recomment">
-                    <div class="title">
-                        <a href="" class="album-name">Album mới</a>
-                        <a href="" class="see-all">See all</a>
-                    </div>
-                    <div class="album-poster">  
-                        <div class="album">
-                            <img src = "img\album_rap.jpg" alt ="Album" />
-                            <h3>Rap Việt cũ mà hay</h3>
-                            <p>Mùa đông nghe nhạc nè các ...</p>
-                        </div>
-                        <div class="album">
-                            <img src = "img\28reason.jpg" alt ="Album" />
-                            <h3>28 Reason</h3>
-                            <p>Khi yêu ai thì cần con mẹ gì  lí do ...</p>
-                        </div>
-                        <a  class="album">
-                            <img src = "img\lost.jpg" alt ="Album" />
-                            <h3>Lost</h3>
-                            <p>Lòng lạnh lẽo, lo lắng, lúc lạc  ...</p>
-                        </a>
-                        <div class="album">
-                            <img src = "img\4th.jpg" alt ="Album" />
-                            <h3>2 Baddies</h3>
-                            <p>Mình chưa nghe gì nên kb gì  cả...</p>
-                        </div>
-                        <div class="album">
-                            <img src = "img\bp.jpg" alt ="Album" />
-                            <h3>Born Pink</h3>
-                            <p>Black Pink in your è rì ớ...</p>
-                        </div>   
-                    </div>
-                </div>
-                <div id="album-recomment">
-                    <div class="title">
-                        <a href="" class="album-name">Album mới</a>
-                        <a href="" class="see-all">See all</a>
-                    </div>
-                    <div class="album-poster">  
-                        <div class="album">
-                            <img src = "img\album_rap.jpg" alt ="Album" />
-                            <h3>Rap Việt cũ mà hay</h3>
-                            <p>Mùa đông nghe nhạc nè các ...</p>
-                        </div>
-                        <div class="album">
-                            <img src = "img\28reason.jpg" alt ="Album" />
-                            <h3>28 Reason</h3>
-                            <p>Khi yêu ai thì cần con mẹ gì  lí do ...</p>
-                        </div>
-                        <a  class="album">
-                            <img src = "img\lost.jpg" alt ="Album" />
-                            <h3>Lost</h3>
-                            <p>Lòng lạnh lẽo, lo lắng, lúc lạc  ...</p>
-                        </a>
-                        <div class="album">
-                            <img src = "img\4th.jpg" alt ="Album" />
-                            <h3>2 Baddies</h3>
-                            <p>Mình chưa nghe gì nên kb gì  cả...</p>
-                        </div>
-                        <div class="album">
-                            <img src = "img\bp.jpg" alt ="Album" />
-                            <h3>Born Pink</h3>
-                            <p>Black Pink in your è rì ớ...</p>
-                        </div>   
-                    </div>
-                </div>
-                <div id="album-recomment">
-                    <div class="title">
-                        <a href="" class="album-name">Album mới</a>
-                        <a href="" class="see-all">See all</a>
-                    </div>
-                    <div class="album-poster">  
-                        <div class="album">
-                            <img src = "img\album_rap.jpg" alt ="Album" />
-                            <h3>Rap Việt cũ mà hay</h3>
-                            <p>Mùa đông nghe nhạc nè các ...</p>
-                        </div>
-                        <div class="album">
-                            <img src = "img\28reason.jpg" alt ="Album" />
-                            <h3>28 Reason</h3>
-                            <p>Khi yêu ai thì cần con mẹ gì  lí do ...</p>
-                        </div>
-                        <a  class="album">
-                            <img src = "img\lost.jpg" alt ="Album" />
-                            <h3>Lost</h3>
-                            <p>Lòng lạnh lẽo, lo lắng, lúc lạc  ...</p>
-                        </a>
-                        <div class="album">
-                            <img src = "img\4th.jpg" alt ="Album" />
-                            <h3>2 Baddies</h3>
-                            <p>Mình chưa nghe gì nên kb gì  cả...</p>
-                        </div>
-                        <div class="album">
-                            <img src = "img\bp.jpg" alt ="Album" />
-                            <h3>Born Pink</h3>
-                            <p>Black Pink in your è rì ớ...</p>
-                        </div>   
-                    </div>
-                </div>
-                <div id="album-recomment">
-                    <div class="title">
-                        <a href="" class="album-name">Album mới</a>
-                        <a class="see-all">See all</a>
-                    </div>
-                    <div class="album-poster">  
-                        <div class="album">
-                            <img src = "img\album_rap.jpg" alt ="Album" />
-                            <h3>Rap Việt cũ mà hay</h3>
-                            <p>Mùa đông nghe nhạc nè các ...</p>
-                        </div>
-                        <div class="album">
-                            <img src = "img\28reason.jpg" alt ="Album" />
-                            <h3>28 Reason</h3>
-                            <p>Khi yêu ai thì cần con mẹ gì  lí do ...</p>
-                        </div>
-                        <a  class="album">
-                            <img src = "img\lost.jpg" alt ="Album" />
-                            <h3>Lost</h3>
-                            <p>Lòng lạnh lẽo, lo lắng, lúc lạc  ...</p>
-                        </a>
-                        <div class="album">
-                            <img src = "img\4th.jpg" alt ="Album" />
-                            <h3>2 Baddies</h3>
-                            <p>Mình chưa nghe gì nên kb gì  cả...</p>
-                        </div>
-                        <div class="album">
-                            <img src = "img\bp.jpg" alt ="Album" />
-                            <h3>Born Pink</h3>
-                            <p>Black Pink in your è rì ớ...</p>
-                        </div>   
-                    </div>
-                </div>
-                <div id="album-recomment">
-                    <div class="title">
-                        <a href="" class="album-name">Album mới</a>
-                        <a href="" class="see-all">See all</a>
-                    </div>
-                    <div class="album-poster">  
-                        <div class="album">
-                            <img src = "img\album_rap.jpg" alt ="Album" />
-                            <h3>Rap Việt cũ mà hay</h3>
-                            <p>Mùa đông nghe nhạc nè các ...</p>
-                        </div>
-                        <div class="album">
-                            <img src = "img\28reason.jpg" alt ="Album" />
-                            <h3>28 Reason</h3>
-                            <p>Khi yêu ai thì cần con mẹ gì  lí do ...</p>
-                        </div>
-                        <a  class="album">
-                            <img src = "img\lost.jpg" alt ="Album" />
-                            <h3>Lost</h3>
-                            <p>Lòng lạnh lẽo, lo lắng, lúc lạc  ...</p>
-                        </a>
-                        <div class="album">
-                            <img src = "img\4th.jpg" alt ="Album" />
-                            <h3>2 Baddies</h3>
-                            <p>Mình chưa nghe gì nên kb gì  cả...</p>
-                        </div>
-                        <div class="album">
-                            <img src = "img\bp.jpg" alt ="Album" />
-                            <h3>Born Pink</h3>
-                            <p>Black Pink in your è rì ớ...</p>
-                        </div>   
-                    </div>
-                </div>
-                <div id="album-recomment">
-                    <div class="title">
-                        <a href="" class="album-name">Album mới</a>
-                        <a href="" class="see-all">See all</a>
-                    </div>
-                    <div class="album-poster">  
-                        <div class="album">
-                            <img src = "img\album_rap.jpg" alt ="Album" />
-                            <h3>Rap Việt cũ mà hay</h3>
-                            <p>Mùa đông nghe nhạc nè các ...</p>
-                        </div>
-                        <div class="album">
-                            <img src = "img\28reason.jpg" alt ="Album" />
-                            <h3>28 Reason</h3>
-                            <p>Khi yêu ai thì cần con mẹ gì  lí do ...</p>
-                        </div>
-                        <a  class="album">
-                            <img src = "img\lost.jpg" alt ="Album" />
-                            <h3>Lost</h3>
-                            <p>Lòng lạnh lẽo, lo lắng, lúc lạc  ...</p>
-                        </a>
-                        <div class="album">
-                            <img src = "img\4th.jpg" alt ="Album" />
-                            <h3>2 Baddies</h3>
-                            <p>Mình chưa nghe gì nên kb gì  cả...</p>
-                        </div>
-                        <div class="album">
-                            <img src = "img\bp.jpg" alt ="Album" />
-                            <h3>Born Pink</h3>
-                            <p>Black Pink in your è rì ớ...</p>
-                        </div>   
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
+    </div>    
 </body>
 </html>

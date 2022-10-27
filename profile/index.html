@@ -17,9 +17,11 @@
       <i class="fas fa-chevron-circle-right"></i>
     </div>
     <div id="root__top__user" style="background-color: rgb(40, 40, 40);">
-      <img src="./assets/img/thang.jpg" id="root__top__user__avatar">
-      <div id="root__top__user__name">Thang</div>
-      <img id="root__top__user__drop-icon" src="assets/img/drop-icon.png">
+      <img src="img/thang.jpg" id="root__top__user__avatar">
+      <div id="root__top__user__name">
+        <span style="padding-left:5px ;">Thang</span>
+        <i class="fas fa-sort-down" style="padding-left:5px ;"></i>
+      </div>
     </div>    
   </div>
 </header>
@@ -98,12 +100,12 @@
               </div>
           </div>
       </div>
-  </div>
+    </div>
     <div class="right">
       <div id="root">
         <div id="root__main-view" style="background-color: rbga(74,53,144,0.35); ">
           <div id="on-open-playlist__header">
-            <img id="on-open-playlist__header__img" src="./assets/img/thang.jpg">
+            <img id="on-open-playlist__header__img" src="img/thang.jpg">
           <div id="on-open-playlist__header__title">
                   <div id="on-open-playlist__header__title__type">profile</div>
                   <div id="on-open-playlist__header__title__name" style="white-space: nowrap; font-size: 89px;">Thang</div>
@@ -118,7 +120,7 @@
             <div class="body-part">
               <div id="on-open-playlist__body">
                   <div id="on-open-playlist__body__btn">
-                      <img id="on-open-playlist__body__btns__see-more" src="./assets/img/see-more.png">
+                      <img id="on-open-playlist__body__btns__see-more" src="img/see-more.png">
                   </div>
                   
                   <div class="root__main-view__playlist-section" section-type="best-of-artist">
@@ -136,27 +138,27 @@
                     </div>
                     <div class="album-poster">  
                         <div class="singer">
-                            <img src = "assets\img\singer_vu.jpg" alt ="Singer" />
+                            <img src = "img\singer_vu.jpg" alt ="Singer" />
                             <h3 style = "text-align: center;">Vũ</h3>
                             <p style = "text-align: center;">745K người nghse hàng tháng</p>
                         </div>
                         <div class="singer">
-                            <img src = "assets\img\singer_ed.jpg" alt ="Singer" />
+                            <img src = "img\singer_ed.jpg" alt ="Singer" />
                             <h3 style = "text-align: center;">Ed Sheeran</h3>
                             <p style = "text-align: center;">78.546K người nghe hàng tháng</p>
                         </div>
                         <a  class="singer">
-                            <img src = "assets\img\singer_hien.jpg" alt ="Singer" />
+                            <img src = "img\singer_hien.jpg" alt ="Singer" />
                             <h3 style = "text-align: center;">Diệu Hiền</h3>
                             <p style = "text-align: center;">0 người nghe hàng tháng</p>
                         </a>
                         <div class="singer">
-                            <img src = "assets\img\singer_rose.jpg" alt ="Singer" />
+                            <img src = "img\singer_rose.jpg" alt ="Singer" />
                             <h3 style = "text-align: center;">ROSÉ</h3>
                             <p style = "text-align: center;">3.353K người nghe hàng tháng</p>
                         </div>
                         <div class="singer">                   
-                            <img src = "assets\img\singer_billie.jpg" alt ="Singer" />
+                            <img src = "img\singer_billie.jpg" alt ="Singer" />
                             <h3 style = "text-align: center;">Billie Eilish</h3>
                             <p style = "text-align: center;">49.712K người nghe hàng tháng</p>
                         </div>   
@@ -167,150 +169,156 @@
                   <div class="root__main-view__playlist-section" section-type="best-of-artist">
                     <div class="introduction">
                       <div>
-                          <a href="#" class="title">Top tracks this month</a>
+                          <a href="##" class="title">Top tracks this month</a>
                           <span class="description">Only visible to you</span>
                       </div>
-                      <a class="see-all" href="#">See all</a>
                     </div>
                           
-                  <ul class="song"  style="background-color: rgba(255, 255, 255, 0);" display="flex">
-                    <li class="number"><span style="display: block;">1</span><img class="playing-gif" src="./assets/images/main-view/icon-playing.gif" style="display: none;"></li>
-                    <li class="title">
-                      <img class="song-img" src="./assets/img/songer-Rose-on the ground.jpg">
-                      <div class="song-info">
-                          <div class="song-info__name" style="color: white;">On The Ground</div>
-                          <div class="song-info__artist">Rosé (BlackPink)</div>
-                      </div>
+                  <ul class="top-tracks-song">
+                    <li class="index">
+                      <span>1</span>
+                      <img class="playing-gif" src="./assets/images/main-view/icon-playing.gif" style="display: none;">
                     </li>
-                    <li class="album">On The Ground</li>
+                    <li class="list-song-img"><img src="img/songer-Rose-on the ground.jpg"></li>
 
-                    <li class="more">
-                      <i class="fas fa-heart"></i>
-                      <span class="more__time">4:45</span>
+                    <li class="song-info">
+                      <span class="song-info_name">On The Groundđsdsdsdsds</span>
+                      <span class="song-info_artist">Rosé (BlackPink)</span>
                     </li>
+                    <li class="song-name">On The Ground</li>
+                    <li class="love-icon"><i class="fas fa-heart"></i></li>
+                    <li class="time-up"><span class="more__time">4:45</span></li>
                   </ul>
-                  <ul class="song" style="background-color: rgba(255, 255, 255, 0);" display="flex">
-                    <li class="number"><span style="display: block;">2</span><img class="playing-gif" src="./assets/images/main-view/icon-playing.gif" style="display: none;"></li>
-                    <li class="title">
-                      <img class="song-img" src="./assets/img/songer-Lisa-lalisa.jpg">
-                      <div class="song-info">
-                          <div class="song-info__name" style="color: white;">Lalisa</div>
-                          <div class="song-info__artist">Lisa (BlackPink)</div>
-                      </div>
+
+                  <ul class="top-tracks-song">
+                    <li class="index">
+                      <span>2</span>
+                      <img class="playing-gif" src="img/main-view/icon-playing.gif" style="display: none;">
                     </li>
-                    <li class="album">Lalisa</li>
-                    
-                    <li class="more">
-                      <i class="fas fa-heart"></i>
-                      <span class="more__time">4:45</span>
-                      
+                    <li class="list-song-img"><img src="img/songer-Rose-on the ground.jpg"></li>
+
+                    <li class="song-info">
+                      <span class="song-info_name">On The Groundđsdsdsdsds</span>
+                      <span class="song-info_artist">Rosé (BlackPink)</span>
                     </li>
+                    <li class="song-name">On The Ground</li>
+                    <li class="love-icon"><i class="fas fa-heart"></i></li>
+                    <li class="time-up"><span class="more__time">4:45</span></li>
                   </ul>
-                  <ul class="song"  style="background-color: rgba(255, 255, 255, 0);" display="flex">
-                    <li class="number"><span style="display: block;">3</span><img class="playing-gif" src="./assets/images/main-view/icon-playing.gif" style="display: none;"></li>
-                    <li class="title">
-                      <img class="song-img" src="./assets/img/bông hoajpg.jpg">
-                      <div class="song-info">
-                          <div class="song-info__name" style="color: white;">Bông hoa đẹp nhất</div>
-                          <div class="song-info__artist">Quân AP</div>
-                      </div>
+
+                  <ul class="top-tracks-song">
+                    <li class="index">
+                      <span>3</span>
+                      <img class="playing-gif" src="images/main-view/icon-playing.gif" style="display: none;">
                     </li>
-                    <li class="album">Bông hoa đẹp nhất</li>
-                    
-                    <li class="more">
-                      <i class="fas fa-heart"></i>
-                      <span class="more__time">4:45</span>
-                      
+                    <li class="list-song-img"><img src="img/songer-Rose-on the ground.jpg"></li>
+
+                    <li class="song-info">
+                      <span class="song-info_name">On The Groundđsdsdsdsds</span>
+                      <span class="song-info_artist">Rosé (BlackPink)</span>
                     </li>
+                    <li class="song-name">On The Ground</li>
+                    <li class="love-icon"><i class="fas fa-heart"></i></li>
+                    <li class="time-up"><span class="more__time">4:45</span></li>
                   </ul>
-                  <ul class="song"  style="background-color: rgba(255, 255, 255, 0);" display="flex">
-                    <li class="number"><span style="display: block;">4</span><img class="playing-gif" src="./assets/images/main-view/icon-playing.gif" style="display: none;"></li>
-                    <li class="title">
-                      <img class="song-img" src="./assets/img/singer-sơn tùng-lạc trôi.jpg">
-                      <div class="song-info">
-                          <div class="song-info__name" style="color: white;">Lạc trôi</div>
-                          <div class="song-info__artist">Sơn Tùng MTP</div>
-                      </div>
+                  <ul class="top-tracks-song">
+                    <li class="index">
+                      <span>4</span>
+                      <img class="playing-gif" src="images/main-view/icon-playing.gif" style="display: none;">
                     </li>
-                    <li class="album">Lạc trôi</li>
-                    
-                    <li class="more">
-                      <i class="far fa-heart"></i>
-                      
-                      <span class="more__time">4:45</span>
-                      
+                    <li class="list-song-img"><img src="img/songer-Rose-on the ground.jpg"></li>
+
+                    <li class="song-info">
+                      <span class="song-info_name">On The Groundđsdsdsdsds</span>
+                      <span class="song-info_artist">Rosé (BlackPink)</span>
                     </li>
+                    <li class="song-name">On The Ground</li>
+                    <li class="love-icon"><i class="fas fa-heart"></i></li>
+                    <li class="time-up"><span class="more__time">4:45</span></li>
                   </ul>
-    
-                </div>
-                  <div class="root__main-view__playlist-section" section-type="best-of-artist">
-                    
-                    <div class="introduction">
-                      <div>
-                          <a href="#" class="title">Following</a>
-                          <span class="description"></span>
-                      </div>
-                      <a class="see-all" href="#">See all</a>
+                  <ul class="top-tracks-song">
+                    <li class="index">
+                      <span>5</span>
+                      <img class="playing-gif" src="img/main-view/icon-playing.gif" style="display: none;">
+                    </li>
+                    <li class="list-song-img"><img src="img/songer-Rose-on the ground.jpg"></li>
+
+                    <li class="song-info">
+                      <span class="song-info_name">On The Groundđsdsdsdsds</span>
+                      <span class="song-info_artist">Rosé (BlackPink)</span>
+                    </li>
+                    <li class="song-name">On The Ground</li>
+                    <li class="love-icon"><i class="far fa-heart"></i></li>
+                    <li class="time-up"><span class="more__time">4:45</span></li>
+                  </ul>
+
+                  <div id="album-recomment">
+                    <div class="title">
+                        <a href="##" class="album-name">Your Playlist</a>
+                        <a href="##" class="see-all">See all</a>
                     </div>
-                    <ul class="playlists">
-                      
-                  <li class="playlist is-a-playlist best-of-artist" playlist-id="14">
-                    <div class="playlist__playbtn">
-                      <img class="playlist-img" src="./assets/img/img7.jpg" style="width: 158px;">
-                      
-                      <div class="play-now-shadow" style="opacity: 0;"></div>
+                    <div class="album-poster">  
+                        <div class="album">
+                            <img src = "img\album_rap.jpg" alt ="Album" />
+                            <h3>Rap Việt cũ mà hay</h3>
+                            <p>Mùa đông nghe nhạc nè các ...</p>
+                        </div>
+                        <div class="album">
+                            <img src = "img\28reason.jpg" alt ="Album" />
+                            <h3>28 Reason</h3>
+                            <p>Khi yêu ai thì cần gì phải tìm lí do ...</p>
+                        </div>
+                        <a  class="album">
+                            <img src = "img\lost.jpg" alt ="Album" />
+                            <h3>Lost</h3>
+                            <p>Lòng lạnh lẽo, lo lắng, lúc lạc  ...</p>
+                        </a>
+                        <div class="album">
+                            <img src = "img\4th.jpg" alt ="Album" />
+                            <h3>2 Baddies</h3>
+                            <p>Mình chưa nghe gì nên kb gì  cả...</p>
+                        </div>
+                        <div class="album">
+                            <img src = "img\bp.jpg" alt ="Album" />
+                            <h3>Born Pink</h3>
+                            <p>Black Pink in your è rì ớ...</p>
+                        </div>   
                     </div>
-                    <div class="playlist__description">
-                        <div class="playlist__description__title">Jisoo</div>
-                        <div class="playlist__description__artist">Profile</div>
+                  </div>
+                  <div id="album-recomment">
+                    <div class="title">
+                        <a href="##" class="album-name">Favourite Album</a>
+                        <a href="##" class="see-all">See all</a>
                     </div>
-                  </li>
-                  <li class="playlist is-a-playlist best-of-artist" playlist-id="16">
-                    <div class="playlist__playbtn">
-                      <img class="playlist-img" src="./assets/img/nancy4.jpg" style="width: 158px;">
-                      
-                      <div class="play-now-shadow" style="opacity: 0;"></div>
+                    <div class="album-poster">  
+                        <div class="album">
+                            <img src = "img\album_rap.jpg" alt ="Album" />
+                            <h3>Rap Việt cũ mà hay</h3>
+                            <p>Mùa đông nghe nhạc nè các ...</p>
+                        </div>
+                        <div class="album">
+                            <img src = "img\28reason.jpg" alt ="Album" />
+                            <h3>28 Reason</h3>
+                            <p>Khi yêu ai thì cần gì phải tìm lí do ...</p>
+                        </div>
+                        <a  class="album">
+                            <img src = "img\lost.jpg" alt ="Album" />
+                            <h3>Lost</h3>
+                            <p>Lòng lạnh lẽo, lo lắng, lúc lạc  ...</p>
+                        </a>
+                        <div class="album">
+                            <img src = "img\4th.jpg" alt ="Album" />
+                            <h3>2 Baddies</h3>
+                            <p>Mình chưa nghe gì nên kb gì  cả...</p>
+                        </div>
+                        <div class="album">
+                            <img src = "img\bp.jpg" alt ="Album" />
+                            <h3>Born Pink</h3>
+                            <p>Black Pink in your è rì ớ...</p>
+                        </div>   
                     </div>
-                    <div class="playlist__description">
-                        <div class="playlist__description__title">Nancy</div>
-                        <div class="playlist__description__artist">Profile</div>
-                    </div>
-                  </li>
-                  <li class="playlist is-a-playlist best-of-artist" playlist-id="18">
-                    <div class="playlist__playbtn">
-                      <img class="playlist-img" src="./assets/img/img9.jpg" style="width: 158px;">
-                      
-                      <div class="play-now-shadow" style="opacity: 0;"></div>
-                    </div>
-                    <div class="playlist__description">
-                        <div class="playlist__description__title">Jennie</div>
-                        <div class="playlist__description__artist">Profile</div>
-                    </div>
-                  </li>
-                  <li class="playlist is-a-playlist best-of-artist" playlist-id="19">
-                    <div class="playlist__playbtn">
-                      <img class="playlist-img" src="./assets/img/IU.jpg" style="width: 158px;">
-                      
-                      <div class="play-now-shadow" style="opacity: 0;"></div>
-                    </div>
-                    <div class="playlist__description">
-                        <div class="playlist__description__title">IU</div>
-                        <div class="playlist__description__artist">Profile</div>
-                    </div>
-                  </li>
-                  <li class="playlist is-a-playlist best-of-artist" playlist-id="17">
-                    <div class="playlist__playbtn">
-                      <img class="playlist-img" src="./assets/img/irenejfif.jfif" style="width: 158px;">
-                      
-                      <div class="play-now-shadow" style="opacity: 0;"></div>
-                    </div>
-                    <div class="playlist__description">
-                        <div class="playlist__description__title">Irene</div>
-                        <div class="playlist__description__artist">Profile</div>
-                    </div>
-                  </li>
-                    </ul></div>
-                    </div>
+                  </div> 
+
               </div>
             </div>
       </div>

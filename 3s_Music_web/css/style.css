@@ -3,6 +3,10 @@ body{
     background-color: black ;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     min-width: 1000px;
+    
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 #top{
     position:absolute;

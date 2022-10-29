@@ -8,20 +8,85 @@ body{
 body::-webkit-scrollbar {
     display: none;
 }
+/* Header */
 #top{
     position:absolute;
     z-index: 10;
     position: fixed;
+    display: flex;
+    align-items: center;
     top: 0;
     left: 0;
     width: 100%;
     height: 8vh;
-    background-color: rgb(0, 0, 0);
+    background-color:black;
+}
+/* Login button -------------------------------------------*/
+.login {
+    float: left;
+}
+/* move_action -------------------------------------------*/
+#root__top__move-action {
+    display: block;
+    padding-left: 12%;
+    font-size: 37px;
+    color:bisque;
 }
 
-#middle{
-    margin-top: 8vh;
+#root__top__move-action *{
+    display: flex; /* Important */ 
+    opacity: 0.8;
+    width: 3%;
+    color: #211f1f;
+    float: left;
+    margin-left: 50px;
 }
+
+#root__top__move-action :hover{
+    color: white;
+    opacity: 1;
+}
+
+/* Top-user ---------------------------------------- */
+#root__top__user {
+    float: right;
+    border-radius: 23px;
+    height: 28px;
+    width: 100px;
+    background-color:#12110c;
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* margin-right: 32px; */
+    /* cursor: pointer; */
+}
+#root__top__user:hover {
+    background-color: #282828;
+}
+#root__top__user__avatar {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+#root__top__user__name {
+    color: white;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.root__top__user__drop-bar {
+    position: fixed;
+    /* top: 55px; */
+    background-color: #282828;
+    width: 196px;
+    border-radius: 2px;
+}
+/* Middle --------------------------------------------------------- */
+/* Sidebar --------------------------------------------------------- */
+#middle {
+    margin-top: 8vh ;
+}
+
 #root__left-sidebar {
     min-height: 800px;
     display: flex;
@@ -121,7 +186,7 @@ body::-webkit-scrollbar {
     display: none;
     padding-left: 5%;
 }
-
+/* Create playlist action ------------------------------------------- */
 #Create-playlist{
     background-color: rgba(0, 0, 0 , 0.75);
     width: 85%;
@@ -250,7 +315,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     margin-top: 10%;
 }
-
+/* Right temp ------------------------------------------------------------------------ */
 .right{
     background-color: #121212;
     background-image:linear-gradient(#4D4B4B 20px,#121212 400px);
@@ -315,7 +380,70 @@ img.cover{
     justify-content: space-between;
     align-items: baseline;
     padding:0 2% 1%;       
-}  
+} 
+
+.top-tracks-song{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding:10px 2%;
+}
+.index {
+    margin-left:5px;
+    float: left ;
+    display: block;
+    text-align: center;
+    width: 2%;   
+}
+.list-song-img{
+    display: block;
+    width: 10%;
+}
+.list-song-img > img{
+    margin-left: 20%;
+    height: 7vh;
+}
+.song-info {
+    display: block;
+    width: 350px;
+}
+.song-info > .song-info_name{
+    display: block;
+    float: none;
+    /* margin-left: 50px; */
+}
+.song-name{
+    display: block;
+    width: 300px;
+}
+.love-icon {
+    display: block;
+    text-align: center;
+    width: 100px;
+}
+.time-up{
+    display: block;
+    width: 20%;
+    text-align: center;
+}
+.root__main-view__playlist-section{
+    color: #afafaf;
+}
+.top-tracks-song{
+    background-color: #121212;
+    margin: 0 2% 1%;
+    border-radius: 5px;
+}
+.root__main-view__playlist-section{
+
+    display: block; 
+}
+.root__main-view__playlist-section > .list-top-song :hover{
+    background-color: rgb(15, 15, 15);
+}
+
+
+
 .album-poster{
     margin: 0 2% 1%;
     display: flex;

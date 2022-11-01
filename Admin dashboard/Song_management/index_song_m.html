@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google.">
+    <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template, eCommerce dashboard, analytic dashboard">
+    <meta name="author" content="ThemeSelect">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/charts.css/dist/charts.min.css">
+    <script src="js/js.js"></script>
+    <!-- <link rel="stylesheet"  href="css/dashboard.min.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="css/dashboard.min.css"> -->
+
+    <!-- <script src="js/vendors.min.js"></script> -->
+    <!-- <script src="js/jquery.sparkline.min.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/custom.css"> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="js.js"></script>
+
+</head>
+<body>
+    
+    <!-- <input type="checkbox" id="sidebar-toggle"> -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3 class="brand">
+                <span class="ti-unlink"></span> 
+                <span>CRM</span>
+            </h3> 
+            <label for="sidebar-toggle" class="ti-menu-alt"></label>
+        </div>
+        
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="ti-home"></span>
+                        <span>Trang chủ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="ti-face-smile"></span>
+                        <span>Khách hàng</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="ti-agenda"></span>
+                        <span>Sản phẩm</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="ti-clipboard"></span>
+                        <span>Nhân sự</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="ti-folder"></span>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="ti-time"></span>
+                        <span>Thời gian biểu</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="ti-book"></span>
+                        <span>Liên hệ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="ti-settings"></span>
+                        <span>Cài đặt</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    
+    
+    <div class="main-content">
+        
+        <header>
+            <div class="search-wrapper">
+                <span class="ti-search"></span>
+                <input type="search" placeholder="Search">
+            </div>
+            
+            <div class="social-icons">
+                <span class="ti-bell"></span>
+                <span class="ti-comment"></span>
+                <div></div>
+            </div>
+        </header>
+
+        
+        <main>
+            
+            <h2 class="dash-title">Overview</h2>
+            <div class="dash-cards">    
+                <div class="card-single">
+                    <div class="card-body">
+                        <span class="ti-briefcase"></span>
+                        <div>
+                            <h5>Account Balance</h5>
+                            <h4>$30,659.45</h4>
+                            
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="">View all</a>
+                    </div>
+                </div>
+                
+                <div class="card-single">
+                    <div class="card-body">
+                        <span class="ti-reload"></span>
+                        <div>
+                            <h5>Pending</h5>
+                            <h4>$19,500.45</h4>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="">View all</a>
+                    </div>
+                </div>
+                
+                <div class="card-single">
+                    <div class="card-body">
+                        <span class="ti-check-box"></span>
+                        <div>
+                            <h5>Processed</h5>
+                            <h4>$20,659</h4>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="">View all</a>
+                    </div>
+                </div>
+            </div>
+            <div class="overview-chart">
+
+                <div id="stock-chart-example-2">
+
+                    <table class="charts-css area">
+                      <caption> Stock Price </caption>
+                      <tbody>
+                        <tr><td style="--start: 0.3; --size: 0.4"></td></tr>
+                        <tr><td style="--start: 0.4; --size: 0.8"></td></tr>
+                        <tr><td style="--start: 0.8; --size: 0.6"></td></tr>
+                        <tr><td style="--start: 0.6; --size: 1.0"></td></tr>
+                        <tr><td style="--start: 1.0; --size: 0.3"></td></tr>
+                        <tr><td style="--start: 0.3; --size: 0.8"></td></tr>
+                        <tr><td style="--start: 0.8; --size: 0.6"></td></tr>
+                        <tr><td style="--start: 0.6; --size: 1.0"></td></tr>
+                        <tr><td style="--start: 1.0; --size: 0.3"></td></tr>
+                        <tr><td style="--start: 0.3; --size: 0.8"></td></tr>
+                        <tr><td style="--start: 0.8; --size: 0.6"></td></tr>
+                        <tr><td style="--start: 0.6; --size: 1.0"></td></tr>
+                        <tr><td style="--start: 1.0; --size: 0.3"></td></tr>
+                      </tbody>
+                    </table>
+                  
+                    <table class="charts-css line">
+                      <caption> Trend Line </caption>
+                      <tbody>
+                        <tr><td style="--start: 0.4; --size: 0.5"></td></tr>
+                        <tr><td style="--start: 0.5; --size: 0.3"></td></tr>
+                        <tr><td style="--start: 0.3; --size: 0.4"></td></tr>
+                        <tr><td style="--start: 0.4; --size: 0.7"></td></tr>
+                      </tbody>
+                    </table>
+                  
+                    <table class="charts-css column data-spacing-2">
+                      <caption> Stock trade volume </caption>
+                      <tbody>
+                        <tr><td style="--size: 0.6;"></td></tr>
+                        <tr><td style="--size: 0.9;"></td></tr>
+                        <tr><td style="--size: 1.0;"></td></tr>
+                        <tr><td style="--size: 0.4;"></td></tr>
+                        <tr><td style="--size: 0.3;"></td></tr>
+                        <tr><td style="--size: 0.6;"></td></tr>
+                        <tr><td style="--size: 0.9;"></td></tr>
+                        <tr><td style="--size: 1.0;"></td></tr>
+                        <tr><td style="--size: 0.4;"></td></tr>
+                        <tr><td style="--size: 0.3;"></td></tr>
+                        <tr><td style="--size: 0.6;"></td></tr>
+                        <tr><td style="--size: 0.9;"></td></tr>
+                        <tr><td style="--size: 1.0;"></td></tr>
+                        <tr><td style="--size: 0.4;"></td></tr>
+                        <tr><td style="--size: 0.3;"></td></tr>
+                        <tr><td style="--size: 0.6;"></td></tr>
+                        <tr><td style="--size: 0.9;"></td></tr>
+                        <tr><td style="--size: 1.0;"></td></tr>
+                        <tr><td style="--size: 0.4;"></td></tr>
+                        <tr><td style="--size: 0.3;"></td></tr>
+                        <tr><td style="--size: 0.6;"></td></tr>
+                        <tr><td style="--size: 0.9;"></td></tr>
+                        <tr><td style="--size: 1.0;"></td></tr>
+                        <tr><td style="--size: 0.4;"></td></tr>
+                        <tr><td style="--size: 0.3;"></td></tr>
+                      </tbody>
+                    </table>
+                    <div class="primary-axis"> Primary Axis Title </div>
+                    <div class="data-1-axis"> Stock Price </div>
+                    <div class="data-2-axis"> Moving Average </div>
+                  </div>
+                  
+            </div>
+
+            
+            <!-- https://codepen.io/jlalovi/details/bIyAr -->
+            <div class="container">
+                <!-- DONUT CHART BLOCK (LEFT-CONTAINER) --> 
+                <div class="donut-chart-block block"> 
+                                
+                    <h2 class="titular">STAT OF SOUND Genres</h2>
+                        <div class="donut-chart">
+            <!-- PORCIONES GRAFICO CIRCULAR
+                    ELIMINADO #donut-chart
+                    MODIFICADO CSS de .donut-chart -->
+                    <div id="porcion1" class="recorte"><div class="quesito ios" data-rel="21"></div></div>
+                <div id="porcion2" class="recorte"><div class="quesito mac" data-rel="39"></div></div>
+                <div id="porcion3" class="recorte"><div class="quesito win" data-rel="31"></div></div>
+                <div id="porcionFin" class="recorte"><div class="quesito linux" data-rel="9"></div></div>
+            <!-- FIN AÑADIDO GRÄFICO -->
+                                        <p class="center-date">JUNE<br><span class="scnd-font-color">2022</span></p>        
+                      </div>
+                      <ul class="os-percentages horizontal-list">
+                          <li>
+                              <p class="ios os scnd-font-color">Story</p>
+                              <p class="os-percentage">21<sup>%</sup></p>
+                          </li>
+                          <li>
+                              <p class="mac os scnd-font-color">Song</p>
+                              <p class="os-percentage">39<sup>%</sup></p>
+                          </li>
+                          <li>
+                              <p class="linux os scnd-font-color">Audio</p>
+                              <p class="os-percentage">9<sup>%</sup></p>
+                          </li>
+                          <li>
+                              <p class="win os scnd-font-color">Podcarts</p>
+                              <p class="os-percentage">31<sup>%</sup></p>
+                          </li>
+                      </ul>
+                  </div>
+   <!-- LINE CHART BLOCK (LEFT-CONTAINER) -->
+                  <div class="line-chart-block block">
+                        <div class="line-chart">
+                            <div class='grafico'>
+                            <ul class='eje-y'>
+                            <li data-ejeY='30'></li>
+                            <li data-ejeY='20'></li>
+                            <li data-ejeY='10'></li>
+                            <li data-ejeY='0'></li>
+                            </ul>
+                            <ul class='eje-x'>
+                            <li>Apr</li>
+                            <li>May</li>
+                            <li>Jun</li>
+                            </ul>
+                            <span data-valor='25'>
+                                <span data-valor='8'>
+                                <span data-valor='13'>
+                                    <span data-valor='5'>   
+                                    <span data-valor='23'>   
+                                    <span data-valor='12'>
+                                        <span data-valor='15'>
+                                        </span></span></span></span></span></span></span>
+                        </div>
+                            
+                    </div>
+                      <ul class="time-lenght horizontal-list">
+                          <li><a class="time-lenght-btn" href="#14">Week</a></li>
+                          <li><a class="time-lenght-btn" href="#15">Month</a></li>
+                          <li><a class="time-lenght-btn" href="#16">Year</a></li>
+                      </ul>
+                      <ul class="month-data clear">
+                          <li>
+                              <p>APR<span class="scnd-font-color"> 2022</span></p>
+                              <p><span class="entypo-plus increment"> </span>21<sup>%</sup></p>
+                          </li>
+                          <li>
+                              <p>MAY<span class="scnd-font-color"> 2022</span></p>
+                              <p><span class="entypo-plus increment"> </span>48<sup>%</sup></p>
+                          </li>
+                          <li>
+                              <p>JUN<span class="scnd-font-color"> 2022</span></p>
+                              <p><span class="entypo-plus increment"> </span>35<sup>%</sup></p>
+                          </li>
+                      </ul>
+                  </div>
+                  
+  
+    
+                    <div class="bar-chart-block block">
+                    <h2 class='titular'>By Country</h2>
+                        <div class='grafico bar-chart'>
+                            <ul class='eje-y'>
+                            <li data-ejeY='60'></li>
+                            <li data-ejeY='45'></li>
+                            <li data-ejeY='30'></li>
+                            <li data-ejeY='15'></li>
+                            <li data-ejeY='0'></li>
+                            </ul>
+                            <ul class='eje-x'>
+                            <li data-ejeX='37'><i>España</i></li>
+                            <li data-ejeX='56'><i>Portugal</i></li>
+                            <li data-ejeX='25'><i>Italia</i></li>
+                            <li data-ejeX='18'><i>Grecia</i></li>
+                            <li data-ejeX='45'><i>EE.UU</i></li>
+                            <li data-ejeX='50'><i>México</i></li>
+                            <li data-ejeX='33'><i>Chile</i></li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+
+            <section class="recent">
+                <div class="activity-grid">
+                    <div class="activity-card">
+                        <h3>Recent activity</h3>
+                        
+                        <div class="table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Customer</th>
+                                        <th>First Sign In</th>
+                                        <th>Last Deal</th>
+                                        <th>Face</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class = "customer_name">Trần Đăng Minh Vũ</td>
+                                        <td>15 Aug, 2020</td>
+                                        <td>22 Aug, 2020</td>
+                                        <td class="td-team">
+                                            <div class="img-1"></div>
+
+                                        </td>
+                                        <td>
+                                            <span class="badge success">Success</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "customer_name">Custommer1</td>
+                                        <td>15 Aug, 2020</td>
+                                        <td>22 Aug, 2020</td>
+                                        <td class="td-team">
+                                            <div class="img-2"></div>
+                                        </td>
+                                        <td>
+                                            <span class="badge warning">Processing</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "customer_name">Customer2</td>
+                                        <td>15 Aug, 2020</td>
+                                        <td>22 Aug, 2020</td>
+                                        <td class="td-team">
+                                            <div class="img-3"></div>
+                                        </td>
+                                        <td>
+                                            <span class="badge success">Success</span>
+                                        </td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="summary">
+                        <div class="summary-card">
+                            <div class="summary-single">
+                                <span class="ti-id-badge"></span>
+                                <div>
+                                    <h5>196</h5>
+                                    <small>Number of staff</small>
+                                </div>
+                            </div>
+                            <div class="summary-single">
+                                <span class="ti-calendar"></span>
+                                <div>
+                                    <h5>16</h5>
+                                    <small>Number of leave</small>
+                                </div>
+                            </div>
+                            <div class="summary-single">
+                                <span class="ti-face-smile"></span>
+                                <div>
+                                    <h5>12</h5>
+                                    <small>Profile update request</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bday-card">
+                            <div class="bday-flex">
+                                <div class="bday-img"></div>
+                                <div class="bday-info">
+                                    <h5>Dwayne F. Sanders</h5>
+                                    <small>Birthday Today</small>
+                                </div>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button>
+                                    <span class="ti-gift"></span>
+                                    Wish him
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="root__main-view__playlist-section" section-type="best-of-artist">
+                <div class="title">
+                    <a href="##" class="album-name">Danh mục bài hát</a>
+                </div>
+                <div class="list-top-song">       
+                <ul class="top-tracks-song">
+                    <li class="index">
+                    <span>1</span>
+                    <img class="playing-gif" src="./assets/images/main-view/icon-playing.gif" style="display: none;">
+                    </li>
+                    <li class="list-song-img"><img src="img/28reason.jpg"></li>
+
+                    <li class="song-info">
+                    <span class="song-info_name">On The Groundđsdsdsdsds</span>
+                    <span class="song-info_artist">Rosé (BlackPink)</span>
+                    </li>
+                    <li class="song-name">On The Ground</li>
+                    <li class="love-icon">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </li>
+                    
+                    <li class="time-up"><span class="more__time">4:45</span></li>
+                    
+                </ul>
+                </div>
+                <div class="list-top-song">       
+                    <ul class="top-tracks-song">
+                        <li class="index">
+                        <span>2</span>
+                        <img class="playing-gif" src="./assets/images/main-view/icon-playing.gif" style="display: none;">
+                        </li>
+                        <li class="list-song-img"><img src="img/28reason.jpg"></li>
+    
+                        <li class="song-info">
+                        <span class="song-info_name">On The Groundđsdsdsdsds</span>
+                        <span class="song-info_artist">Rosé (BlackPink)</span>
+                        </li>
+                        <li class="song-name">On The Ground</li>
+                        <li class="love-icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </li>
+                        <li class="time-up"><span class="more__time">4:45</span></li>
+                    </ul>
+                </div>
+                <div class="list-top-song">       
+                    <ul class="top-tracks-song">
+                        <li class="index">
+                        <span>3</span>
+                        <img class="playing-gif" src="./assets/images/main-view/icon-playing.gif" style="display: none;">
+                        </li>
+                        <li class="list-song-img"><img src="img/28reason.jpg"></li>
+    
+                        <li class="song-info">
+                        <span class="song-info_name">On The Groundđsdsdsdsds</span>
+                        <span class="song-info_artist">Rosé (BlackPink)</span>
+                        </li>
+                        <li class="song-name">On The Ground</li>
+                        <li class="love-icon">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </li>
+                        <li class="time-up"><span class="more__time">4:45</span></li>
+                    </ul>
+                </div> 
+                <div class="list-top-song">       
+                    <ul class="top-tracks-song">
+                        <li class="index">
+                        <span>4</span>
+                        <img class="playing-gif" src="./assets/images/main-view/icon-playing.gif" style="display: none;">
+                        </li>
+                        <li class="list-song-img"><img src="img/28reason.jpg"></li>
+    
+                        <li class="song-info">
+                        <span class="song-info_name">On The Groundđsdsdsdsds</span>
+                        <span class="song-info_artist">Rosé (BlackPink)</span>
+                        </li>
+                        <li class="song-name">On The Ground</li>
+                        <li class="love-icon">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </li>
+                        <li class="time-up"><span class="more__time">4:45</span></li>
+                    </ul>
+                </div>
+                <div class="list-top-song">       
+                    <ul class="top-tracks-song">
+                        <li class="index">
+                        <span>5</span>
+                        <img class="playing-gif" src="./assets/images/main-view/icon-playing.gif" style="display: none;">
+                        </li>
+                        <li class="list-song-img"><img src="img/28reason.jpg"></li>
+    
+                        <li class="song-info">
+                        <span class="song-info_name">On The Groundđsdsdsdsds</span>
+                        <span class="song-info_artist">Rosé (BlackPink)</span>
+                        </li>
+                        <li class="song-name">On The Ground</li>
+                        <li class="love-icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </li>
+                        <li class="time-up"><span class="more__time">4:45</span></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            
+            
+        </main>
+        
+    </div>
+    
+</body>
+</html>
